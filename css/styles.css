@@ -1,0 +1,138 @@
+/* STYLES.CSS */
+/* Main stylesheet for the site */
+
+body{
+    position: relative;
+}
+
+*{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#section1
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+p{
+    padding: 20px;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2em;
+}
+
+.navbar .navbar-nav{
+    display: inline-block;
+    position:absolute;
+    float:none;
+    text-align:center;
+    margin:auto;
+}
+
+.vertical-alignment-helper{
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+
+.modal-content{
+    width:inherit;
+    max-width:inherit;
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+.overlay-container{
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    opacity:0;
+    left:0;
+    right:0;
+    top:0;
+    margin:auto;
+    transition: 1s ease;
+    vertical-align: middle;
+}
+
+.ov-clr-purple{
+    background:rgba(147,112,219,.75);
+}
+
+.ov-clr-white{
+    background:rgba(0,0,0,.5)
+}
+
+.overlay-container:hover .overlay{
+    opacity:1;
+}
+
+.overlay-content{
+    color:white;
+    position:relative;
+    padding-top:20%;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+    padding-left:50px;
+    text-align: center;
+}
+img{
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: inherit;
+    margin:auto;
+}
+#home{
+    padding-top: 250px;
+    height: 350px;
+    padding-bottom:300px;
+    color:#fff;
+    background-color: black;
+    border-bottom-style: solid;
+    border-color: darkslategray;
+}
+#section1{
+    padding-top: 100px;
+    height:100%;
+}
+#section2{
+    padding-top: 100px;
+    height:100%;
+    border-bottom-style: solid;
+    border-color:black;
+}
+#section3{
+    padding-top:100px;
+    height:100%;
+    background-color: black;
+    color:white;
+}
