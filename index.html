@@ -23,16 +23,28 @@
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <div id="navbar">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" data-toggle="modal" data-target="#titleModal" href="#">Riley Lannon</a>
                     </div>
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-left">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#section1">Production</a></li>
                         <li><a href="#section2">Composition</a></li>
                         <li><a href="#section3">Performance</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">Go To...
+                                <span class="glyphicon glyphicon-list"></span>
+                            </a>
+                            <ul class="dropdown-menu list-group">
+                                <a class="dropdown-menu-item list-group-item" href="#">Recordings</a>
+                                <a class="dropdown-menu-item list-group-item" href="#">Sheets</a>
+                                <a class="dropdown-menu-item list-group-item" href="#">Contact</a>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -59,30 +71,34 @@
                 <h2>Musician, Composer, Producer</h2>
         </div>
         
-        <div id="section1">
+        <div id="section1" class="overlay-container">
             <h1>Production</h1>
-            <div class="overlay-container">
+            <!--<div class="overlay-container">-->
                 <img src="media/ableton.png">
-                <div class="overlay ov-clr-purple">
+                <div class="overlay ov-clr-white">
                     <h3 class="overlay-content">Using industry-standard software such as Ableton Live and Native Instruments KOMPLETE, I produce, mix, and master all of my own compositions, giving me the freedom to produce a recording that sounds exactly as I intended</h3>
+                    <br />
+                    <a type="button" class="overlay-content btn btn-primary btn-lg" href="#">Listen to Original Compositions</a>
                 </div>
-            </div>
+            <!--</div>-->
         </div>
         
         <div id="section2" class="overlay-container">
-            
                 <h1>Composition</h1>
-                <img src="media/score.png" class="img-responsive">
+                <img src="media/score.png">
                 <div class="overlay ov-clr-white">
                     <h3 class="overlay-content">Described as "cinematic", my composition style is modern, influenced by a wide range of composers including J.S. Bach, Ludwig van Beethoven, Dmitri Shostakovich, Hans Zimmer, and more.</h3>
+                    <br />
+                    <a type="button" class="overlay-content btn btn-primary btn-lg" href="#">View Sheet Music</a>
                 </div>
-            
         </div>
-        <div id="section3">
+        
+        <div id="section3" class="overlay-container">
             <h1>Performance</h1>
-            <p>Classically trained, I have been playing keyboard instruments for over a decade, including piano, organ, and harpsichord.</p>
-            
-            <img src="media/organ.jpg" class="img-responsive">
+            <img src="media/CAL72.jpg" class="img-responsive">
+            <div class="overlay ov-clr-white">
+                <h3 class="overlay-content">I am a classically trained musician with over a decade piano, organ, and vocal experience.</h3>
+            </div>
         </div>
     </body>
 </html>

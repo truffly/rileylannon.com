@@ -9,13 +9,6 @@ body{
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#section1
-{
-    background-color: black;
-    color:white;
-    text-align: center;
-}
-
 p{
     padding: 20px;
 }
@@ -26,12 +19,29 @@ p{
     font-size: 1.2em;
 }
 
-.navbar .navbar-nav{
-    display: inline-block;
-    position:absolute;
-    float:none;
-    text-align:center;
-    margin:auto;
+.dropdown .dropdown-menu{
+    background: transparent;
+    color:white;
+    border:none;
+    box-shadow: none;
+}
+
+.dropdown .dropdown-menu a{
+    color:gray;
+    font-size: 1.2em;
+}
+
+.dropdown .dropdown-menu a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.dropdown .list-group-item{
+    background-color:black;
+}
+
+.dropdown .list-group-item:hover{
+    background-color:gray;
 }
 
 .vertical-alignment-helper{
@@ -76,7 +86,7 @@ p{
 }
 
 .ov-clr-white{
-    background:rgba(0,0,0,.5)
+    background:rgba(0,0,0,.7)
 }
 
 .overlay-container:hover .overlay{
@@ -93,6 +103,7 @@ p{
 
 h1{
     text-align: center;
+    padding-bottom:50px;
 }
 
 h2{
@@ -123,12 +134,16 @@ img{
 #section1{
     padding-top: 100px;
     height:100%;
+    background-color: black;
+    color:white;
+    text-align: center;
 }
 #section2{
     padding-top: 100px;
     height:100%;
     border-bottom-style: solid;
     border-color:black;
+    text-align:center;
 }
 #section3{
     padding-top:100px;
