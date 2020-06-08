@@ -1,175 +1,79 @@
-<!DOCTYPE html>
-<!--index.html-->
-<!--rileylannon.com-->
+<!-- index.html -->
+<!-- Uses bootstrap's 'cover' template -->
+
+<!doctype html>
 <html lang="en">
     <head>
-        <!--stylesheets-->
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <!--bootstrap main-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
-        <!--scripts-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        
-        <!--fonts-->
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        
-        <!--metadata-->
         <meta charset="utf-8">
+        <meta lang="en-us">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
         <meta name="author" content="Riley Lannon">
-        <meta name="copyright" content="2019">
+        
+        <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
         <title>Riley Lannon</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/styles.css" rel="stylesheet">
     </head>
-    <body data-spy="scroll" data-target=".navbar">
-        <div id="navbar">
-            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" data-toggle="modal" data-target="#titleModal" href="#">Riley Lannon</a>
-                    </div>
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#production">Production</a></li>
-                        <li><a href="#composition">Composition</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+
+    <body class="text-center">
+
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                <h3 class="masthead-brand">Riley Lannon</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Music</a>
+                    <a class="nav-link" href="#">Software</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
                 </div>
-            </nav>
-        </div>
-        
-        <div class="modal fade" id="titleModal" tabindex="-1" role="dialog">
-            <div class="vertical-alignment-helper">
-                <div class="modal-dialog modal-dialog-centered vertical-align-center" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Riley Lannon</h3>
-                        </div>
-                    <div class="modal-body">
-                        <p>I am a composer from the Twin Cities, Minnesota, USA. I have over a decade of piano experience and 6 years experience producing music using Logic Pro, Ableton Live, and Native Instruments Komplete.</p>    
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                    </div>
+            </header>
+
+            <main role="main" class="inner cover">
+                <h1 class="cover-heading">Commissions</h1>
+                <p class="lead">Whether it's a commission a piece of music or software, I'm here to help turn your big idea into a reality</p>
+                <p class="lead">
+                <a href="#" class="btn btn-lg btn-primary">Get in touch</a>
+                </p>
+            </main>
+
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <a href="https://github.com/rlannon" target="_blank">
+                        <img id="github-logo" src="media/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub" title="GitHub">
+                    </a>
+                    <a href="#" id="imslp-link" target="_blank">
+                        <svg class="bi bi-music-note-list" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="imslp-svg">
+                            <title>IMSLP</title>
+                            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                            <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                            <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
                 </div>
-            </div>
-        </div>
-        
-        <div id="home" class="container-fluid">
-            <h1>Riley Lannon</h1>
-                <h2>Musician, Composer, Producer</h2>
-        </div>
-        
-        <!--    Production Section  -->
-        <div id="production" class="content-section overlay-container">
-            <h1>Production</h1>
-            <img src="media/ableton.png">
-            
-            <!--    Overlay    -->
-            <div class="overlay ov-clr-white">
-                <h3 class="overlay-content">Using industry-standard software such as Ableton Live and Native Instruments KOMPLETE, I produce, mix, and master all of my own compositions, giving me the freedom to produce a recording that sounds exactly as I intended</h3>
-                <br />
-                <a type="button" class="overlay-content btn btn-primary btn-lg" href="#" id="production-button" data-toggle="modal" data-target="#production-modal">Listen</a>
-            </div>
-            
-            <!--    Modal   -->
-            <div class="modal fade" id="production-modal" tabindex="-1" role="dialog">
-                <div class="vertical-alignment-helper">
-                    <div class="modal-dialog modal-dialog-centered vertical-align-center" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title">Listen to my Music</h3>
-                            </div>
-                            <div class="modal-body">
-                                <p>You can listen to all of my music on <a href="https://soundcloud.com/r-patrick-lannon" target="_blank">SoundCloud</a>. Recordings are also available on <a href="https://imslp.org/wiki/Category:Lannon,_Riley" target="_blank">IMSLP</a> accompanying my scores.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </footer>
         </div>
 
-        <!--    Composition Section     -->
-        <div id="composition" class="content-section overlay-container">
-            <h1>Composition</h1>
-            <img src="media/score.png">
-            
-            <!--    Overlay     -->
-            <div class="overlay ov-clr-white">
-                <h3 class="overlay-content">Described as "cinematic", my composition style is modern, influenced by a wide range of composers including J.S. Bach, Ludwig van Beethoven, Dmitri Shostakovich, Hans Zimmer, and more.</h3>
-                <br />
-                <a type="button" class="overlay-content btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#composition-modal">View Sheet Music</a>
-            </div>
-            
-            <!--    Modal  -->
-            <div class="modal fade" id="composition-modal" tabindex="-1" role="dialog">
-                <div class="vertical-alignment-helper">
-                    <div class="modal-dialog modal-dialog-centered vertical-align-center" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title">View Scores</h3>
-                            </div>
-                            <div class="modal-body">
-                                <p>All of my scores are available in the public domain at <a href="https://imslp.org/wiki/Category:Lannon,_Riley" target="_blank">International Music Score Library Project (IMSLP)</a>. Each score is accompanied by a recording.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!--    Contact info    -->
-        <div id="contact" class="content-section overlay-container">
-            <h1>Contact</h1>
-            <!--    Contact Images  -->
-            <div class="content-img-row">
-                <div class="content-img-col">
-                    <img src="media/organ.JPG" alt="At the console">
-                </div>
-                <div class="content-img-col">
-                    <img src="media/headshot.JPG" alt="Headshot">
-                </div>
-            </div>
-            <div class="overlay ov-clr-white">
-                <h3 class="overlay-content">Interested in a commission or collaboration?</h3>
-                <br />
-                <a type="button" class="overlay-content btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#contact-modal">Get in Touch</a>
-            </div>
-            
-            <!--    Contact info modal  -->
-            <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
-                <div class="vertical-alignment-helper">
-                    <div class="modal-dialog modal-dialog-centered vertical-align-center" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title">Contact Me</h3>
-                            </div>
-                            <div class="modal-body">
-                                <p>If you are interested in contacting me regarding a collaboration, a commission, or for any other reason, you may reach me by email at <a href="mailto:me@rileylannon.com" target="_top">me@rileylannon.com</a></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!--    Site Footer  -->
-        <div id="footer" class="content-section overlay-container">
-            <p>Copyright &copy; 2019 Riley Lannon</p>
-        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
     </body>
 </html>
