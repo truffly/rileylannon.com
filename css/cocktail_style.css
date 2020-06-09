@@ -1,0 +1,46 @@
+/*
+
+Cocktails
+cocktail_style.css
+Copyright 2020 Riley Lannon
+
+Some custom styles/fixes to bootstrap elements
+
+*/
+
+#main {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#mode-selection button {
+    margin:1vh;
+    margin-left: 0vh;
+}
+
+#query {
+    padding-top: 5vh;
+}
+
+#query .row {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#query table {
+    margin-top: 5vh;
+}
+
+#search-button {
+    padding-top: 3vh;
+}
+
+#recipe-display {
+    padding-top: 3vh;
+    padding-bottom: 10vh;   /* we need some padding on the bottom of the page */
+}
+
+#recipe-display .card {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

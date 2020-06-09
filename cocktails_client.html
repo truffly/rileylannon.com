@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en-us">
+    <meta author="Riley Lannon">
+
+    <!--    bootstrap css   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--    custom css/fixes    -->
+    <link rel="stylesheet" href="css/cocktail_style.css" type="text/css">
+    
+    <title>Cocktails</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <h1 class="alert alert-primary text-center">Cocktails</h1>
+
+        <!--    Mode selection  -->
+        <div class="row">
+            <div class="col" id="mode-selection">
+                <button type="button" class="btn btn-primary" onclick="display_query_input(NAME_CONST)">Give me a recipe for this cocktail</button>
+                <button type="button" class="btn btn-success" onclick="display_query_input(INGREDIENTS_CONST)">Give me recipes that contain certain ingredients</button>
+                <button type="button" class="btn btn-info" onclick="display_query_input(GARNISH_CONST)">Give me cocktails with a particular garnish</button>
+                <button type="button" class="btn btn-secondary" onclick="display_query_input(DRINKWARE_CONST)">Give me cocktails in a particular drinkware</button>
+                <button type="button" class="btn btn-dark" onclick="display_query_input(SERVED_CONST)">Give me cocktails served a particular way</button>
+            </div>
+            <div class="col">
+                <h3>Get Cocktail Recipes</h3>
+                <p>Know the name of a cocktail, but not the recipe (or the other way round)? Maybe you have a bunch of ingredients in your cupboard and don't know what you can make with them, or you have some new cocktail glasses and want to know what you could serve in them. No matter the case, you can use this simple tool to look up and filter cocktails by a whole array of different criteria. Just use the buttons to choose what you want to search by and enter your query.</p>
+            </div>
+        </div>
+
+        <!--    Search query input  -->
+        <div id="query">
+            <!--    Modified with JavaScript    -->
+        </div>
+
+        <!--    Recipe display  -->
+        <div id="recipe-display">
+            <!--    Modified with JavaScript    -->
+        </div>
+    </div>
+
+    <!--    Bootstrap JS/JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--    Custom JS   -->
+    <script src="js/cocktail_api_access.js"></script>
+    <script src="js/cocktail_scripts.js"></script>
+</body>
